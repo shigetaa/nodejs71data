@@ -117,5 +117,15 @@
 入力`X`が与えられたとき、出力`Y`が得られる確率を`P(Y|X)`と表します。
 そして、これをベイズの定義で表すと以下の様になります。
 
-<img src="https://latex.codecogs.com/svg.image?P(Y|X|)&space;=&space;\frac{P(Y)P(X|Y|)}{P(X)}" title="P(Y|X|) = \frac{P(Y)P(X|Y|)}{P(X)}" />
+<img src="https://latex.codecogs.com/svg.image?P\left&space;(&space;Y|X&space;\right&space;)&space;=&space;\frac{P(Y)P(X|Y)}{P(X)}" title="P\left ( Y|X \right ) = \frac{P(Y)P(X|Y)}{P(X)}" />
+
+$P(Y|X) = \frac{P(Y)P(X|Y)}{P(X)}$
+
+このとき、`X`には何らかの起こった事象や入力データを、`Y`にはそこから推論したい事柄などをあてはめます。
+例えば、入力`X`は入力テキストになり、出力`Y`は決定されるカテゴリーであるということになりますすし、`X`が受信したメールであれば、`Y`は「迷惑メール」か「普通メール」のようになります。
+
+`X`や`Y`ではわかりにくいので、具体的な例で考えていきましょう。
+例えば、迷惑メールについて考えると、ベイズの定義がわかりやすくなります。
+
+
 
